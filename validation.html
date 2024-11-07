@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+  function validation(){
+  var name1,pass;
+  name1=document.getElementById("t1").value;
+  pass=document.getElementById("t2").value;
+  if(name1=="" | name1==null)
+     alert("enter a name")
+  else if(pass.length<8)
+     alert("password should be 8digits")
+  else
+    alert("form submitted")
+}
+</script>
+</head>
+<body>
+<form name="details" method="post" action="" onsubmit="validation()">
+<label>name:</label>
+<input type="text" id="t1" value=""><br>
+<label>password</label>
+<input type="password" id="t2" value=""><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</form>
+</body>
+</html>
